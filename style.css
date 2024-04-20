@@ -1,0 +1,380 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-monocromatico-blanco-estilo-papel_52683-66443.jpg?w=740&t=st=1713466238~exp=1713466838~hmac=866996485e5a7d2e39807c61a12f0e962dbf1e7989a049b0b7633665cf55b3a6);
+}
+
+ul {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 108, 151);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-radius: 10px 0 0 0;
+}
+
+.container ul{
+    border: 2px solid rgb(71, 143, 185);
+    color: #b7caff;
+}
+
+.container li{
+    font-size: 16px;
+    color: #fff;
+    width: 200px;
+    margin: 10px;
+}
+
+.container a:hover{
+    background-color: rgba(83, 197, 241, 0.411);
+    transition: background-colour 0,5s linear;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box1{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+.box1 img{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    box-shadow: 0 0 10px 10px lightblue;
+}
+
+.box1 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgb(0, 66, 110);
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.box2{
+    width: 100%;
+    height: 100px;
+    font-size: 36px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.post-card{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 30px;
+    width: 300px;
+}
+
+.post-card:hover{
+    transform: scale(1.1);
+    transition: 1s linear;
+}
+
+.post-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.post-title{
+    font-size: 20px;
+    margin: 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post.content{
+    font-size: 14px;
+    color: grey;
+}
+
+.post-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.post-date{
+    font-size: 12px;
+    color: #888;
+}
+
+.read-more{
+    text-decoration: none;
+    font-size: 14px;
+    color: blue;
+    border-radius: 10px;
+}
+
+.box3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+    background-color: #c7c7c7;
+}
+
+.mitad {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+.redes img {
+    width: 110px;
+    height: auto;
+    padding: 8px;
+    margin-right: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.redes p{
+    padding: 20px;
+    margin-left: 40px;
+    position: absolute;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(1, 1, 1, 1);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input,
+.formulario textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 975px) {
+
+    .redes img {
+        width: 92px;
+        padding: 0;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+    
+    .redes p{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    
+    .formulario{
+        width: 100%;
+    }
+}
+
+@media (max-width: 770px) {
+    .redes img {
+        width: 80px;
+        padding: 0;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+    
+    .redes p{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .redes img {
+        width: 60px;
+    }
+    
+    .redes p{
+        margin-left: 0px;
+        font-size: 12px;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+}
+
+@media (max-width: 615px){
+    .box1 p{
+        top: 60%;
+        display: flex;
+        width: 70%;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .box2{
+        height: 40px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        width: 100%;
+        display: flex;
+        text-align: center;
+    }
+}
+
+@media (max-width: 510px){
+    .container li{
+        font-size: 13px;
+        width: 100%;
+        margin: 13px;
+    }
+
+    .box1 p{
+        top: 60%;
+        display: flex;
+        width: 60%;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 450px){
+    .container li{
+        font-size: 11px;
+        width: 100%;
+        margin: 11px;
+    }
+
+    .box1 p{
+        top: 60%;
+        display: flex;
+        width: 60%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .box2{
+        font-size: 28px;
+    }
+
+    .redes img {
+        width: 40px;
+    }
+    
+    .redes p{
+        margin-left: 0px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+}
+
+@media (max-width: 390px){
+    .box1{
+        position: relative;
+        width: 400px;
+        margin: auto;
+    }
+
+    .box3 {
+        width: 400px;
+    }
+
+    .box2{
+        width: 100%;
+        margin: 30px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        font-size: 25px;
+        display: flex;
+        text-align: center;
+    }
+
+    .blog{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px){
+    .box2{
+        width: 100%;
+        margin: 60px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        font-size: 25px;
+        display: flex;
+        text-align: center;
+    }
+}
+
+@media (max-width: 280px){
+    .box2{
+        width: 100%;
+        margin: 60px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        font-size: 25px;
+        display: flex;
+        text-align: center;
+    }
+}
